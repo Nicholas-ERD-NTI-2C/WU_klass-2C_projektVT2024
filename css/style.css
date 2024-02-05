@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --burgerline_width: 30px;
+  --burgerline_height: 5px;
+  --burgerline_margin: 6px;
+
+  --background_color: peachpuff;
+  transition: all 0.5s;
+
+}
+
+#grid_wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto minmax(0, 4fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-areas:
+  "nav hea"
+  "nav se1"
+  ;
+}
+
+#header {
+  grid-area: hea;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header h1 {
+  position: absolute;
+  background-color: #000000; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+}
+
+#header img {
+  width: 100%;
+}
+
+#section_1 {
+  grid-area: se1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+#nav {
+  grid-area: nav;
+  height: 100%;
+  background-color: var(--background_color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: monospace;
+}
+
+#link_list {
+  background: var(--background_color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 200px;
+  position: absolute;
+  left: -200px;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  transition: all 0.5s;
+}
+
+.links_visible {
+  transform: translateX(200px);
+}
+
+#link_list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.1875rem;
+
+  width: 200px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+}
+
+#link_list a:hover {
+  background: lightseagreen;
+  color: whitesmoke;
+}
+
+.burger_line {
+  width: var(--burgerline_width);
+  height: var(--burgerline_height);
+  margin: var(--burgerline_margin);
+  background: black;
+  border-radius: 30px;
+
+  transition: all 0.5s;
+}
+
+.burger_in_x_form #burger_line_1 {
+  transform: translateY(calc((var(--burgerline_height) + var(--burgerline_margin)))) rotate(45deg);
+}
+
+.burger_in_x_form #burger_line_2 {
+  opacity: 0;
+}
+
+.burger_in_x_form #burger_line_3 {
+  transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+}
+
+#burger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}

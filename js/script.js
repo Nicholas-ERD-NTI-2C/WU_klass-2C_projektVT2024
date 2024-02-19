@@ -10,11 +10,9 @@ function toggleMenu() {
   burger.classList.toggle('burger_in_x_form')
   if(toggleBool) {
     nav.style.width = "82px";
-    //grid.style.gridTemplateColumns = "minmax(0, 82px) minmax(0, 4fr);";
     toggleBool = false;
   } else {
     nav.style.width = "200px";
-    //grid.style.gridTemplateColumns = "minmax(0, 200px) minmax(0, 4fr);";
     toggleBool = true;
   }
 }

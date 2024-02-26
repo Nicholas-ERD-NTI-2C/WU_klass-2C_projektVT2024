@@ -132,3 +132,15 @@
   left: 20px;
   cursor: pointer;
 }
+
+
+#grid_wrapper {
+  display: grid;
+  height: auto;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: minmax(0, 33vh) minmax(0, 1fr);
+  grid-template-areas:
+  "nav hea"
+  "nav se1"
+  ;
+}

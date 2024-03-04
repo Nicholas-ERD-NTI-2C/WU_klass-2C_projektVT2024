@@ -44,8 +44,20 @@
   grid-area: se1;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+#section_1 p {
+  padding-top: 8px;
+  font-size: 1.125rem;
+}
+
+#section_1 h2 {
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding-bottom: 1px;
+
 }
 
 
@@ -128,19 +140,12 @@
 
 #burger {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
+  background-color: var(--background_color);
+  border-radius: 5px;
+  opacity: 0.6;
 }
 
 
-#grid_wrapper {
-  display: grid;
-  height: auto;
-  grid-template-columns: auto minmax(0, 1fr);
-  grid-template-rows: minmax(0, 33vh) minmax(0, 1fr);
-  grid-template-areas:
-  "nav hea"
-  "nav se1"
-  ;
-}

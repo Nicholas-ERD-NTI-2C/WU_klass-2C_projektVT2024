@@ -9,7 +9,7 @@ function toggleMenu() {
   link_list.classList.toggle('links_visible')
   burger.classList.toggle('burger_in_x_form')
   if(toggleBool) {
-    nav.style.width = "82px";
+    nav.style.width = "0px";
     toggleBool = false;
   } else {
     nav.style.width = "200px";

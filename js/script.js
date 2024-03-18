@@ -12,8 +12,13 @@ function toggleMenu() {
     nav.style.width = "0px";
     toggleBool = false;
   } else {
-    nav.style.width = "200px";
+    if(window.innerWidth > 600) {
+      nav.style.width = "200px";
+    } else {
+      nav.style.width = "100vw"
+    }
     toggleBool = true;
+
   }
 }
 

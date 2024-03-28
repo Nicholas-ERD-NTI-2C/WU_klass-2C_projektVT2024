@@ -58,8 +58,9 @@
   text-align: center;
   border-bottom: 3px solid black;
   padding-bottom: 1px;
-
 }
+
+/* ------------IMG CARDS------------ */
 
 .card {
   background-color: black;
@@ -82,16 +83,52 @@
   height: 100%;
 }
 
-.card img:hover {
-  width: 10%;
-}
-
 .cards {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ------------IMAGE HOVERING------------ */
+
+.img_wrap {
+  position: relative;
+}
+
+.img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  background: black;
+
+  visibility: hidden;
+  opacity: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.img_description p {
+  text-align: center;
+  color: white;
+  font-size: 1vw; 
+  padding-left: 2vw; 
+  padding-right: 2vw;
 }
 
 /* ------------NAVBAR------------ */
@@ -182,7 +219,7 @@
   opacity: 0.6;
 }
 
-
+/* ------------TELEFON------------ */
 
 @media screen and (max-width: 600px) {
 

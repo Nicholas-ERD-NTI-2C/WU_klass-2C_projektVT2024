@@ -60,6 +60,26 @@
   padding-bottom: 1px;
 }
 
+/* ------------ARTIKEL PAGE------------ */
+#artikel_grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "nav se1"
+  ;
+}
+
+
+#artikel_section {
+  grid-area: se1;
+  background-color: aquamarine;
+}
+
+
+
+
+
 /* ------------IMG PAGE------------ */
 #grid_image {
   display: grid;
@@ -140,7 +160,6 @@
 
 #image_section {
   grid-area: sec;
-  background-color: aquamarine;
 }
 
 /* ------------IMG CARDS------------ */

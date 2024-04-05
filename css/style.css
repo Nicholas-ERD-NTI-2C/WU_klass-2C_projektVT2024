@@ -79,26 +79,58 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 3fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 80px minmax(0, 1fr) minmax(0, 1fr);
   grid-template-areas:
+    "hea hea hea"
     "tx1 tx1 im1"
     "im2 tx2 tx2"
   ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#artikel_header {
+  grid-area: hea;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #artikel_text_1 {
-  padding: 20px;
+  grid-area: tx1;
+  font-size: 1vw;
+  padding-top: 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #artikel_text_2 {
-  padding: 20px;
+  grid-area: tx2;
+  font-size: 1vw;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 10vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #artikel_img_1 {
-  padding: 20px;
+  grid-area: im1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+}
+
+#artikel_img_1 img {
+  height: 100%;
 }
 
 #artikel_img_2 {
+  grid-area: im2;
   padding: 20px;
 }
 
@@ -202,13 +234,11 @@
 .card {
   background-color: black;
   border: var(--background_color) 4px solid;
-
   height: 300px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow: hidden;
 }
 

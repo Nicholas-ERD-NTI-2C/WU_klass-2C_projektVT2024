@@ -51,7 +51,7 @@ function next(){
 
 function setImg(){
   const image = images[i];
-  // Replace \n characters with HTML line break tags
+  // Replace \n characters with <br>
   const formattedDescription = image.description.replace(/\n/g, '<br>');
   description.innerHTML = formattedDescription;  
   header.innerHTML = image.title;
@@ -61,7 +61,7 @@ function setImg(){
 button1.addEventListener('click', prev)
 button2.addEventListener('click', next)
 
-// Retrieve the value of 'i' from the URL parameter
+// Retrieve the value for i from the URL parameter
 window.onload = function() {
   const urlParams = new URLSearchParams(window.location.search);
   const paramI = urlParams.get('i');

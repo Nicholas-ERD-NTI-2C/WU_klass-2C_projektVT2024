@@ -77,8 +77,8 @@
 
 #artikel_inner_grid {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 3fr 1fr 2fr;
+  height: auto;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr) minmax(0, 2fr);
   grid-template-rows: 80px minmax(0, 1fr) minmax(0, 1fr);
   grid-template-areas:
     "hea hea hea"
@@ -126,12 +126,19 @@
 }
 
 #artikel_img_1 img {
-  height: 100%;
+  width: 100%;
 }
 
 #artikel_img_2 {
   grid-area: im2;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+}
+
+#artikel_img_2 img {
+  width: 100%;
 }
 
 /* ------------IMG PAGE------------ */

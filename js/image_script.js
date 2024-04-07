@@ -1,23 +1,23 @@
 const images = [{
-  src: 'img/space_camera.png',
+  src: 'img/space_camera.jpg',
   title: 'Space-Camera',
   description: 'Space-Camera is a captivating artwork that immerses viewers in a cosmic ballet of light and darkness. At the heart of the composition is a sleek, futuristic camera, its lens fixed on the enigmatic allure of a massive black hole. Positioned against the backdrop of vibrant hues and swirling nebulae, the camera appears to be on a daring voyage through the depths of space.\n\nSpace-Camera is a testament to the eternal dance between light and darkness in the cosmos. It invites viewers to contemplate the mysteries of the universe and the infinite possibilities that lie beyond the boundaries of human understanding.'
 }, {
-  src: 'img/explode_camera.png',
+  src: 'img/explode_camera.jpg',
   title: 'Explosion Camera',
-  description: ''
+  description: 'is provident sed eius nisi veniam natus deleniti atque, soluta quisquam exercitationem delectus nam ratione tempore totam! Ea dolorem voluptates dolor et quam lauda amet consectetur adipisicing elit. Debitis nesciunt velit adipisci reprehenderit! Tenetur, id autem doloremque perspiciatis provident sed eius nisi veniam natus deleniti atque, soluta quisquam exercitationem delectus nam ratione tempore totam! Ea dolorem voluptates dolor et quam laudantium laboriosam perspiciatis dolorum officiis, incidunt, quos iure odio vitae esse sunt quia ratione commodi harum. Incidunt sit qui ipsa? Harum quia ex, commodi exercitationem fnesciunt, voluptatibus corporis sunt a deleniti sapiente veritatis illo d'
 }, {
-  src: 'img/fire_text.png',
+  src: 'img/fire_text.jpg',
   title: 'Pen On Fire',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt velit adipisci reprehenderit! Tenetur, id autem doloremque perspiciatis provident sed eius nisi veniam natus deleniti atque, soluta quisquam exercitationem delectus nam ratione tempore totam! Ea dolorem voluptates dolor et quam laudantium laboriosam perspiciatis dolorum officiis, incidunt, quos iure odio vitae esse sunt quia ratione commodi harum. Incidunt sit qui ipsa? Harum quia ex, commodi exercitationem fugiat nihil, nesciunt, voluptatibus corporis sunt a deleniti sapiente veritatis illo dolorem dignissimos perspiciatis sequi maxime voluptatem eius debitis. Assumenda quisquam esse molestias nisi quo earum nesciunt. Consequatur, dolorem quod. Veniam ex, recusandae numquam veritatis ullam sequi eos illo nesciunt blanditiis iusto non error laudantium laborum quidem dolor? Temporibus tempore, magnam necessitatibus maiores exercitationem molestiae ut veniam quidem illo nihil, reiciendis, cumque hic repellendus facere iste harum. Qui officia eius ea minima suscipit ducimus odit quaerat, similique repellat. Pariatur cum voluptatibus veritatis nulla fugiat, iste excepturi optio dolore quam atque voluptate, vero provident ratione perferendis facere repudiandae molestias consectetur illo delectus sunt, deserunt id? Dolores eligendi illum dolor a suscipit possimus reprehenderit nostrum, in porro aliquam qui sint recusandae repudiandae deserunt repellendus animi veritatis unde corrupti culpa magni eum dignissimos vero! Sequi laudantium fuga earum!'
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt velit adipisci reprehenderit! Tenetur, id autem doloremque perspiciatis provident sed eius nisi veniam natus deleniti atque, soluta quisquam exercitationem delectus nam ratione tempore totam! Ea dolorem voluptates dolor et quam laudantium laboriosam perspiciatis dolorum officiis, incidunt, quos iure odio vitae esse sunt quia ratione commodi harum. Incidunt sit qui ipsa? Harum quia ex, commodi exercitationem fugiat nihil, nesciunt, voluptatibus corporis sunt a deleniti sapiente veritatis illo dolorem dignissimos perspiciatis sequi maxime voluptatem eius debitis. Assumenda quisquam esse molestias nisi quo earum nesciunt. Consequatur, dolorem quod.'
 }, {
-  src: 'img/first_zaza.png',
+  src: 'img/first_zaza.jpg',
   title: 'Genghis',
-  description: '2009'
+  description: 'is provident sed eius nisi veniam natus deleniti atque, soluta quisquam exercitationem delectus nam ratione tempore totam! Ea dolorem voluptates dolor et quam laudantium laboriosam perspiciatis dolorum officiis, incidunt, quos iure odio vitae esse sunt quia ratione commodi harum. Incidunt sit qui ipsa? Harum quia ex, commodi exercitationem fugiat nihil, nesciunt, voluptatibus corporis sunt a deleniti sapiente veritatis illo d'
 }, {
   src: 'img/drumms.jpg',
   title: 'Trummor',
-  description: '2009'
+  description: 'TRUMMOR'
 }];
 
 var i = 0;

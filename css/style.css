@@ -60,6 +60,14 @@
   padding-bottom: 1px;
 }
 
+#omoss_img {
+  padding-top: 4vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 2vw;
+  width: 100%;
+}
+
 /* ------------ARTIKEL PAGE------------ */
 #artikel_grid {
   display: grid;
@@ -70,11 +78,11 @@
   ;
 }
 
-#artikel_section {
+.artikel_section {
   grid-area: se1;
 }
 
-#artikel_inner_grid {
+.artikel_inner_grid {
   display: grid;
   height: auto;
   grid-template-columns: minmax(0, 3fr) minmax(0, 1fr) minmax(0, 2fr);
@@ -88,7 +96,7 @@
   margin-bottom: 100px;
 }
 
-#artikel_header {
+.artikel_header {
   grid-area: hea;
   font-size: 1.125rem;
   display: flex;
@@ -97,7 +105,7 @@
   text-align: center;
 }
 
-#artikel_text_1 {
+.artikel_text_1 {
   border-top: 4px solid;
   grid-area: tx1;
   font-size: 1vw;
@@ -110,7 +118,7 @@
   overflow-y: auto;
 }
 
-#artikel_text_2 {
+.artikel_text_2 {
   grid-area: tx2;
   font-size: 1vw;
   padding-top: 2vh;
@@ -122,7 +130,7 @@
   overflow-y: auto;
 }
 
-#artikel_img_1 {
+.artikel_img_1 {
   border-top: 4px solid;
   grid-area: im1;
   display: flex;
@@ -131,11 +139,11 @@
   padding: 1vw;
 }
 
-#artikel_img_1 img {
+.artikel_img_1 img {
   width: 100%;
 }
 
-#artikel_img_2 {
+.artikel_img_2 {
   grid-area: im2;
   display: flex;
   align-items: center;
@@ -143,7 +151,7 @@
   padding: 1vw;
 }
 
-#artikel_img_2 img {
+.artikel_img_2 img {
   width: 80%;
 }
 
@@ -477,7 +485,7 @@
 
 
   /* ARTIKEL PAGE */
-  #artikel_inner_grid {
+  .artikel_inner_grid {
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto auto auto auto;
     grid-template-areas:
@@ -490,7 +498,7 @@
     margin-bottom: 50px;
   }
   
-  #artikel_text_1 {
+  .artikel_text_1 {
     border-top: 4px solid;
     font-size: 1rem;
     padding-top: 30px;
@@ -499,7 +507,7 @@
     padding-bottom: 15px;
   }
   
-  #artikel_text_2 {
+  .artikel_text_2 {
     font-size: 1rem;
     padding-top: 15px;
     padding-left: 20px;
@@ -507,12 +515,12 @@
     padding-bottom: 15px;
   }
   
-  #artikel_img_1 {
+  .artikel_img_1 {
     border-top: none;
     padding: 2vw;
   }
   
-  #artikel_img_2 {
+  .artikel_img_2 {
     padding: 2vw;
   }
 }

@@ -219,6 +219,31 @@
   transform: rotate(225deg);
 }
 
+#button_1 a {
+  position: absolute;
+  top: 0;
+  margin-top: 30px;
+}
+
+#button_1 button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  background-color: white; 
+  color: black; 
+  border: 2px solid var(--background_color);
+}
+
+#button_1 button:hover {
+  background-color: var(--background_color);
+  color: white;
+}
+
 #button_2 {
   grid-area: bt2;
   display: flex;
@@ -465,6 +490,10 @@
   #button_1, #button_2 {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  #button_1 button, #button_1 a {
+    display: none;
   }
 
   #button_1 img, #button_2 img {
